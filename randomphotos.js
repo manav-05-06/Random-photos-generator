@@ -1,27 +1,25 @@
-const img=document.querySelector(".forimg");
-const btn=document.querySelector("button");
-const nav=document.querySelector(".navbar");
-const but=document.querySelector(".buttom");
+const imgContainer = document.querySelector(".forimg");
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+const searchBar = document.querySelector(".search-bar");
+const magnifier = document.querySelector(".magnifier");
 
-
-
-btn.addEventListener("click",()=>{
-     number=10;
-    addNewImages()
+// Load more images on button click
+loadMoreBtn.addEventListener("click", () => {
+  const count = 10;
+  addImages(count);
 });
 
-function addNewImages(){
-    for (let index = 0; index <number; index++) {
-        const newimg=document.createElement("img");
-        newimg.src=`https://picsum.photos/300/300?random=${Math.floor(Math.random()*2000)}`
-        img.appendChild(newimg);
-    }
+// Add images dynamically
+function addImages(count) {
+  for (let i = 0; i < count; i++) {
+    const newImg = document.createElement("img");
+    newImg.src = `https://picsum.photos/300/300?random=${Math.floor(Math.random() * 1000 + Date.now())}`;
+    newImg.alt = "Random Image";
+    imgContainer.appendChild(newImg);
+  }
 }
-const search=document.querySelector(".search-bar");
 
-const mag=document.querySelector(".magnifier");
-
-search.addEventListener("click",()=>{
-    search.classList.toggle("active")
-})
-
+// Toggle search bar animation
+magnifier.addEventListener("click", () => {
+  searchBar.classList.toggle("active");
+});
