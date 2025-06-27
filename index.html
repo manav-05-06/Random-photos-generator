@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramdom Photos</title>
-    <link rel ="stylesheet" href="randomphotos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Photos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar">
-       <a href="randomphots.html"> <img src="download (4).svg" alt="logo"></a>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#"><img src="download (4).svg" alt="logo" class="logo" /></a>
     <nav>
-       <ul>
-        
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
-
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
     </nav>
+  </div>
+
+  <!-- Top Section -->
+  <div class="top-container" id="top-container">
+    <div>
+      <h1>Welcome Maharaj 👑</h1>
+      <h2>Search here:</h2>
+      <div class="search-bar active">
+        <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/find_in_magnifier_magnifying_research_search_view_zoom-64.png" alt="magnifier" class="magnifier" />
+        <input type="text" class="input" placeholder="Searching..." />
+        <img src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_mic_none_48px-64.png" alt="mic-icon" class="mic-icon" />
+      </div>
     </div>
-    
-    
-    
-    <div class="top-contanier" id="top-contanier"> <div>
-        <h1>Welcome Maharaj</h1>
-        <h2 style="color: aliceblue";> Search here:</h2>
+  </div>
 
-        <div class="search-bar active">
+  <!-- Description -->
+  <div class="bottom">
+    <p>Explore a stunning collection of randomly generated photos that refresh with every click. Beautiful. Minimal. Ever-changing.</p>
+    <p>Scroll down to view or click the button to load even more images. Enjoy the experience!</p>
+  </div>
 
-            <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/find_in_magnifier_magnifying_research_search_view_zoom-64.png" alt="magnifier"
-            class="magnifier">
-        <input type="text" class="input" placeholder="Searching...."/>
-        
-        <img src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_mic_none_48px-64.png" alt="mic-icon" class="mic-icon"/>
-        </div>
-        
-    </div></div>
-        
-    <div class="bottom"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur deleniti illum natus! Doloremque sit corrupti voluptatem. Soluta, velit quo a omnis accusantium veritatis qui libero vitae sapiente saepe debitis!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis, provident dicta in labore eaque quasi quo reiciendis animi optio illum esse odio maxime aperiam commodi corporis dolor harum assumenda?</p></div>
-    <div class="forimg">
-    <img src="https://picsum.photos/300/300?random=1">
-    <img src="https://picsum.photos/300/300?random=2">
-    <img src="https://picsum.photos/300/300?random=3">
-    <img src="https://picsum.photos/300/300?random=4">
-    <img src="https://picsum.photos/300/300?random=5">
-    <img src="https://picsum.photos/300/300?random=6">
-    <img src="https://picsum.photos/300/300?random=7">
-    <img src="https://picsum.photos/300/300?random=8">
-    <img src="https://picsum.photos/300/300?random=9">
-    <img src="https://picsum.photos/300/300?random=10">
+  <!-- Images -->
+  <div class="forimg">
+    <img src="https://picsum.photos/300/300?random=1" alt="Random Image 1" />
+    <img src="https://picsum.photos/300/300?random=2" alt="Random Image 2" />
+    <img src="https://picsum.photos/300/300?random=3" alt="Random Image 3" />
+    <img src="https://picsum.photos/300/300?random=4" alt="Random Image 4" />
+    <img src="https://picsum.photos/300/300?random=5" alt="Random Image 5" />
+    <img src="https://picsum.photos/300/300?random=6" alt="Random Image 6" />
+    <img src="https://picsum.photos/300/300?random=7" alt="Random Image 7" />
+    <img src="https://picsum.photos/300/300?random=8" alt="Random Image 8" />
+    <img src="https://picsum.photos/300/300?random=9" alt="Random Image 9" />
+    <img src="https://picsum.photos/300/300?random=10" alt="Random Image 10" />
+  </div>
 
+  <!-- Button -->
+  <button id="loadMoreBtn">Load more...</button>
 
-</div>
-    <button>Load more...</button>
-    <script src="randomphotos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
